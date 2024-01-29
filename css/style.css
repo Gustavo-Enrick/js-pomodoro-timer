@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+}
+
+body {
+    background: #323866;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+    background: #17193A;
+}
+
+.container__parteDeCima {
+    text-align: center;
+    margin: 0 5px 0 0;
+}
+
+.container__parteDeCima > h1 {
+    padding: 10px 0 5px 0;
+}
+
+.container__parteDeCima > button {
+    margin-right: 5px;
+    padding: 4%;
+    border-radius: 20px;
+}
+
+.container__cronometro__externo {
+    background: #2475FE;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__cronometro__interno {
+    background: #17193A;
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 100;
+    color: white;
+}
+
+.container__parteDeBaixo {
+    position: absolute;
+    top: 90%;
+    left: 12%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__parteDeBaixo > button {
+    padding: 4%;
+    border-radius: 20%;
+}
+
+#botao1 {
+    background: #D92834;
+}
+
+#botao2 {
+    background: #4C4E88;
+}
+
+#botao3 {
+    background: #2C8813;
+}
+
+#botao4 {
+    background: #D92834;
+}
+
+#botao5 {
+    background: #E69400;
+}
+
+/*Arrumar botão,ver como coloca cronometro e atualiza ele*/
