@@ -33,7 +33,9 @@ function startTimer(){
             updateDisplay();
         }
     },10)
-    btnStart.setAttribute('disabled',true);
+    disableButton(btnStart);
+    enableButton(btnStop);
+    enableButton(btnReset);
 }
 
 function updateDisplay(){
@@ -50,7 +52,8 @@ function playAlarm(){
 function stopTimer(){
     isPaused = true;
     clearInterval(interval);
-    btnStart.removeAttribute('disabled');
+    enableButton(btnStart);
+    disableButton(btnStop);
     alarm.pause();
 }
 
@@ -66,17 +69,32 @@ function restartTimer(){
         minutesEl.textContent = '05';
         secondsEl.textContent = '00';
     }
+    disableButton(btnReset);
     stopTimer();
 }
 
 function activatePomodoroMode(){
     isShortBreakActive = false;
+    disableButton(btnPomodoro);
+    enableButton(btnShortBreak);
     restartTimer();
 }
 
 function activateShortBreakMode(){
     isShortBreakActive = true;
+    disableButton(btnShortBreak);
+    enableButton(btnPomodoro);
     restartTimer();
+}
+
+function enableButton(button){
+    button.classList.remove("disable_button");
+    button.removeAttribute("disabled");
+}
+
+function disableButton(button){
+    button.classList.add("disable_button");
+    button.setAttribute("disabled",true);
 }
 
 btnStart.addEventListener("click",startTimer);
