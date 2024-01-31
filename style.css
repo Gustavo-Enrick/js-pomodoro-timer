@@ -1,16 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --main-bg-color: #323866;
+    --container-bg-color: #17193A;
+    --cronometro-bg-outer: #2475FE;
+    --cronometro-bg-inner: #17193A;
+    --text-color: white;
+    --button-bg-1: #D92834;
+    --button-bg-2: #4C4E88;
+    --button-bg-3: #2C8813;
+    --button-bg-4: #D92834;
+    --button-bg-5: #E69400;
+    --cursor: pointer;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: var(--text-color);
     border: none;
 }
 
 body {
-    background: #323866;
+    background: var(--main-bg-color);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,7 +35,7 @@ body {
     height: 600px;
     width: 400px;
     border-radius: 20px;
-    background: #17193A;
+    background: var(--container-bg-color);
 }
 
 .container__parteDeCima {
@@ -33,14 +47,14 @@ body {
     padding: 10px 0 5px 0;
 }
 
-.container__parteDeCima > button {
+.container__parteDeCima button {
     margin-right: 5px;
     padding: 4%;
     border-radius: 20px;
 }
 
 .container__cronometro__externo {
-    background: #2475FE;
+    background: var(--cronometro-bg-outer);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,7 +68,7 @@ body {
 }
 
 .container__cronometro__interno {
-    background: #17193A;
+    background: var(--cronometro-bg-inner);
     height: 225px;
     width: 225px;
     border-radius: 50%;
@@ -64,7 +78,7 @@ body {
     text-align: center;
     font-size: 65px;
     font-weight: 100;
-    color: white;
+    color: var(--text-color);
 }
 
 .container__parteDeBaixo {
@@ -82,23 +96,30 @@ body {
 }
 
 #botao1 {
-    background: #D92834;
+    background: var(--button-bg-1);
+    cursor: var(--cursor);
 }
 
 #botao2 {
-    background: #4C4E88;
+    background: var(--button-bg-2);
+    cursor: var(--cursor);
 }
 
 #botao3 {
-    background: #2C8813;
+    background: var(--button-bg-3);
+    cursor: var(--cursor);
 }
 
 #botao4 {
-    background: #D92834;
+    background: var(--button-bg-4);
+    cursor: var(--cursor);
 }
 
 #botao5 {
-    background: #E69400;
+    background: var(--button-bg-5);
+    cursor: var(--cursor);
 }
 
-/*Arrumar botão,ver como coloca cronometro e atualiza ele*/
+.disable_button{
+    opacity: 0.2;
+}
