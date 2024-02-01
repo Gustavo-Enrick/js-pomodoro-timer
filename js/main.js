@@ -5,7 +5,7 @@ const btnStop = document.getElementById("botao4");
 const btnReset = document.getElementById("botao5");
 const minutesEl = document.getElementById("minutos");
 const secondsEl = document.getElementById("segundos");
-const alarm = new Audio('alarme.mp3');
+const alarm = new Audio('../alarme/alarme.mp3');
 alarm.loop = true;
 let isPaused;
 let isShortBreakActive = false;

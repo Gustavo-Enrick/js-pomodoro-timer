@@ -12,7 +12,7 @@ Um cronômetro que se baseia no método Pomodoro. Este projeto implementa uma t�
 
 ## Imagem
 
-![Pomodoro Timer](pomodor-timer.png)
+![Pomodoro Timer](/img/pomodor-timer.png)
 
 ## Acesso ao Projeto
 
