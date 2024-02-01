@@ -16,4 +16,4 @@ Um cronômetro que se baseia no método Pomodoro. Este projeto implementa uma t�
 
 ## Acesso ao Projeto
 
-[Link para o Pomodoro Timer](https://gustavo-enrick.github.io/js-pomodoro-timer/)
+[Link para o Pomodoro Timer](https://pomodoro-timer-gustavo.netlify.app/)
