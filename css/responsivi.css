@@ -1,0 +1,43 @@
+@media only screen and (max-device-width: 320px){
+    .container {
+        height: 550px;
+        width: 300px;
+    }
+
+    .container__cronometro__externo {
+        height: 215px;
+        width: 215px;
+    }
+    
+    .container__cronometro__interno {
+        height: 200px;
+        width: 200px;
+        font-size: 62px;
+    }
+
+    .container__parteDeBaixo > button {
+        padding: 4% 4%;
+    }
+}
+
+@media only screen and (max-device-width: 375px) and (min-device-width: 321px){
+    .container {
+        height: 570px;
+        width: 355px;
+    }
+
+    .container__cronometro__externo {
+        height: 235px;
+        width: 235px;
+    }
+    
+    .container__cronometro__interno {
+        height: 220px;
+        width: 220px;
+        font-size: 65px;
+    }
+
+    .container__parteDeBaixo > button {
+        padding: 4% 4%;
+    }
+}
