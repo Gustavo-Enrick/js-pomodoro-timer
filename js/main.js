@@ -32,7 +32,9 @@ function startTimer(){
             }
             updateDisplay();
         }
-    },10)
+            const elemento = document.getElementsByClassName("container__cronometro__externo")[0];
+            elemento.style.background = "green";
+    },10);
     disableButton(btnStart);
     enableButton(btnStop);
     enableButton(btnReset);
@@ -55,6 +57,8 @@ function stopTimer(){
     enableButton(btnStart);
     disableButton(btnStop);
     alarm.pause();
+    const elemento = document.getElementsByClassName("container__cronometro__externo")[0];
+    elemento.style.background = "rgb(245, 0, 0)";
 }
 
 function restartTimer(){
@@ -97,9 +101,17 @@ function disableButton(button){
     button.setAttribute("disabled",true);
 }
 
+function changeColor(){
+    const color = document.getElementsByClassName("container__cronometro__externo")[0];
+    color.style.background = "green";
+}
+
 btnStart.addEventListener("click",startTimer);
 btnStop.addEventListener("click",stopTimer);
 btnReset.addEventListener("click",restartTimer);
 btnPomodoro.addEventListener("click",activatePomodoroMode);
 btnShortBreak.addEventListener("click",activateShortBreakMode);
 restartTimer();
+/*
+-Mudar forma que os botões são desativados
+**/
