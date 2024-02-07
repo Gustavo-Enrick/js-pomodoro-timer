@@ -28,6 +28,7 @@ function startTimer(){
                 minutes--;
             }
             if(minutes === 0 && seconds === 0){
+                disableButton(btnStop);
                 playAlarm();
             }
             updateDisplay();
@@ -112,6 +113,3 @@ btnReset.addEventListener("click",restartTimer);
 btnPomodoro.addEventListener("click",activatePomodoroMode);
 btnShortBreak.addEventListener("click",activateShortBreakMode);
 restartTimer();
-/*
--Mudar forma que os botões são desativados
-**/
